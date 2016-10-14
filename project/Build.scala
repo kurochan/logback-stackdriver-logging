@@ -14,7 +14,7 @@ object Build extends Build {
       libraryDependencies ++= Seq(
         "ch.qos.logback" % "logback-classic" % "1.1.4"
       ),
-     publishTo := Some(Resolver.file("logback-game-image-generator",file("publish"))(Patterns(true, Resolver.mavenStyleBasePattern)))
+     publishTo := Some(Resolver.file("logback-game-image-generator",file("."))(Patterns(true, Resolver.mavenStyleBasePattern)))
     )
   )
 }
