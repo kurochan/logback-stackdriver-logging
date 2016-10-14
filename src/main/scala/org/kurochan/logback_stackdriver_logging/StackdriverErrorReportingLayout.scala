@@ -32,7 +32,7 @@ class StackdriverErrorReportingLayout extends LayoutBase[ILoggingEvent] {
     val log = StackdriverErrorReportingLog(
       severity = event.getLevel.levelStr,
       serviceContext = context,
-      message = message.replaceAll("\n|\r\n", "\\n")
+      message = message
     )
 
     write(log) + CoreConstants.LINE_SEPARATOR
