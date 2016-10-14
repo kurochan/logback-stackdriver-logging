@@ -1,0 +1,37 @@
+project/
+src/
+target/
+
+# IntelliJ
+out/
+.idea
+*.iml
+*.ipr
+*.iws
+*.sc
+
+.ensime
+.ensime_cache
+
+# Eclipse
+.classpath
+.project
+.settings
+.cache
+.metadata
+build-eclipse
+
+# Scala
+*.class
+
+# Vim
+*.swp
+
+# specs2
+target/
+
+# mac
+.DS_Store
+
+# sbt
+.history
